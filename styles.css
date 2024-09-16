@@ -425,6 +425,7 @@ footer .contenedor {
       }
       
       footer li {
+        display: flex;
         margin: 10px;
       }
       
