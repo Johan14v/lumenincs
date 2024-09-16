@@ -1,0 +1,454 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0%;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #ec9e01;
+}
+
+button:hover {
+    background-color: #452e01;
+}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: orange;
+}
+
+.color-acento2 {
+    color: blue;
+}
+
+header {
+    background-color: rgb(245, 245, 245)
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #ec9e01;
+    font-size: 1.6em;
+}
+
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #ec9e01;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/Imagenes/Lumenin1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.7em;
+}
+
+#somos-lumenin .contenedor {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-servicios {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-servicios .contenedor{
+    padding: 100px 12px;
+    text-align: center;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#nuestros-servicios h2 {
+    height: 5vh;
+    margin-top: 0px;
+    font-size: 3.2em;
+}
+
+#carta button{
+    font-size: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#nuestros-servicios .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/Imagenes/1.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/Imagenes/2.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/Imagenes/3.jpg");
+}
+
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/Imagenes/4.png");
+}
+
+.carta:nth-child(5) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/Imagenes/5.jpg");
+}
+
+#valores .contenedor {
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#valores li {
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+#contactenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#contactenos button {
+    font-size: 1.75em;
+}
+
+#contactenos h2 {
+    font-size: 9vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .contenedor {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-lumenin .texto {
+        width: 50%;
+        max-width: 600px;
+        padding-left: 30px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-lumenin h2{
+        margin-top: 0px;
+    }
+
+    #somos-lumenin .contenedor {
+
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-lumenin .img-contenedor {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),url("/Imagenes/Lumenin2.png");
+        background-size: cover;
+        background-position: center center;
+        width: 400px;
+        height: 500px;
+    }
+
+    #nuestros-servicios .cartas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+
+    #nuestros-servicios h2 {
+        height: 5vh;
+        margin-top: 0px;
+        font-size: 3.2em;
+    }
+
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-color: rgba(50,50,50,0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        background-position-y: 0;
+    }
+
+@media (min-width: 720px) {
+    #nuestros-servicios .cartas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        #nuestros-servicios .carta {
+            width: calc(50% - 20px);
+            margin: 20px;
+        }
+
+        #nuestros-servicios .carta:nth-child(1),
+        #nuestros-servicios .carta:nth-child(2) {
+            margin-bottom: 40px;
+        }
+    }
+
+    #valores .contenedor{
+        text-align: initial;
+    }
+
+    #valores ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+      
+    #valores li {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #f7f7f7;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+      
+    #valores li:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        background-color: #ec9e01;
+        border-radius: 50%;
+    }
+      
+    #valores li:nth-child(1):before {
+        background-color: #ec9e01;
+    }
+      
+    #valores li:nth-child(2):before {
+        background-color: #452e01;
+    }
+      
+    #valores li:nth-child(3):before {
+        background-color: #8bc34a;
+    }
+      
+    #valores li:nth-child(4):before {
+        background-color: #2196f3;
+    }
+      
+    #valores li:nth-child(5):before {
+        background-color: #ff9800;
+    }
+
+    #contactenos h2{
+        font-size: 5em;
+    }
+
+    #contactenos button{
+        font-size: 2em;
+    }
+
+    .footer {
+        background-color: rgb(230, 230, 230);
+        padding: 20çpx 0;
+        text-align: center;
+      }
+      
+      footer .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      footer p {
+        margin: 0;
+        font-size: 1.2em;
+        color: #666;
+      }
+      
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      
+      footer li {
+        margin: 10px;
+      }
+      
+      footer a {
+        color: #337ab7;
+        text-decoration: none;
+      }
+      
+      footer a:hover {
+        color: #23527c;
+      }
+      
+      .social-media {
+        margin-top: 20px;
+      }
+      
+      .social-media a {
+        font-size: 2em;
+        margin: 10px;
+        color: #337ab7;
+      }
+      
+      .social-media a:hover {
+        color: #23527c;
+      }
+ 
+}
