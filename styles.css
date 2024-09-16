@@ -399,7 +399,7 @@ footer .contenedor {
 
     .footer {
         background-color: rgb(230, 230, 230);
-        padding: 20çpx 0;
+        padding: 20px 0;
         text-align: center;
       }
       
@@ -435,20 +435,6 @@ footer .contenedor {
       }
       
       footer a:hover {
-        color: #23527c;
-      }
-      
-      .social-media {
-        margin-top: 20px;
-      }
-      
-      .social-media a {
-        font-size: 2em;
-        margin: 10px;
-        color: #337ab7;
-      }
-      
-      .social-media a:hover {
         color: #23527c;
       }
  
